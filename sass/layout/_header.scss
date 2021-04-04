@@ -1,0 +1,133 @@
+.header {
+    border-bottom: 1px solid #ececec;
+  }
+  
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo-web {
+    color: var(--text-color-black);
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .navigation-link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: var(--text-color-darkgrey);
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timimg-function);
+  }
+  
+  .navigation-link:hover,
+  .navigation-link:focus {
+    color: var(--accent-color);
+  }
+  
+  .navigation-link.current {
+    color: var(--accent-color);
+  }
+  
+  .navigation-link.current::after {
+    content: '';
+  
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  
+    display: block;
+    width: 100%;
+    height: 4px;
+  
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+  
+  .contacts-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .contacts-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .contacts-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: var(--text-color-grey);
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  
+  .contacts-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: block; */
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: var(--text-color-grey);
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timimg-function);
+  }
+  
+  .contacts-link:hover .contacts-icon,
+  .contacts-link:focus .contacts-icon {
+    fill: var(--accent-color);
+  }
+  
+  .contacts-link:focus,
+  .contacts-link:hover {
+    color: var(--accent-color);
+  }
+  
+  .contacts-icon {
+    fill: var(--text-color-grey);
+    margin-right: 10px;
+  
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timimg-function);
+  }
